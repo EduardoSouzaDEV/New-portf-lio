@@ -1,0 +1,119 @@
+@use "./config/variaveis.scss";
+@use "./config/reset.scss";
+@use "./hero";
+@use "./navbar";
+@use "./nav";
+@use "./home";
+@use "./about";
+@use "./shows";
+
+body {
+    background-color: variaveis.$colorBlack;
+
+}
+
+.text {
+    font-size: 18px;
+    font-family: "Merriweather", sans-serif;
+}
+
+.title {
+    font-size: 24px;
+    font-family: "Merriweather", sans-serif;
+}
+
+.title--small {
+    font-size: 16px;
+    font-family: "Merriweather", sans-serif;
+}
+
+.title--big {
+    font-size: 40px;
+    font-family: "Merriweather", sans-serif;
+
+    @media (max-width: 460px) {
+        font-size: 24px;
+}
+}
+
+
+.button {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    border: transparent;
+
+}
+
+.button:hover {
+    background-color: variaveis.$colorPrincipal;
+}
+
+.shows__tab__id--is-active {
+    display: block;
+    /* Mostra o conteúdo ativo */
+}
+
+.shows__tab__button--is-active {
+    color: variaveis.$colorSecundary;
+    border: 1px solid variaveis.$colorSecundary;
+    font-weight: bold
+}
+
+.navbar__tab__id--is-active {
+    display: block;
+    /* Mostra o conteúdo ativo */
+}
+
+.navbar__tab__button--is-active {
+    color: variaveis.$colorSecundary;
+    border: 1px solid variaveis.$colorSecundary;
+    font-weight: bold;
+}
+
+
+/*animação*/
+
+.scale-in-hor-left {
+    -webkit-animation: scale-in-hor-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-hor-left {
+    0% {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-hor-left {
+    0% {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        opacity: 1;
+    }
+}

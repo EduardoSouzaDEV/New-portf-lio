@@ -1,0 +1,64 @@
+@use "./config/variaveis";
+
+.hero {
+    
+    height: 80vh;
+    width: 267px;
+    padding: 25px;
+    margin: 20px 40px;
+    background-color: variaveis.$colorPrincipal;
+    border-radius: 20px;
+
+    .text-h1 {
+        display: flex;
+        align-items: center;
+        max-height: 73px;
+        padding: 10px;
+
+        .bx {
+            font-size: 50px;
+            margin-right: 10px;
+        }
+    }
+    
+    .avatar-profile {
+        width: 100%;
+        height: 227px;
+        border-radius: 20px;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .small {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .paragrafo {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .social {
+        max-width: 227px;
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        gap: 25px;
+        font-size: 24px;
+        list-style: none;
+    }
+
+    @media (max-width: 460px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 76vh;
+            padding: 23px;
+            margin: 40px 40px;
+            width: 80%;
+            background-color: #23272B;
+            border-radius: 20px;
+    }
+
+}

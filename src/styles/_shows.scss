@@ -1,0 +1,46 @@
+.shows {
+    display: none;
+    overflow: y;
+    text-align: center;
+
+    .show {
+        display: grid;
+        list-style: none;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 40px;
+        gap: 20px;
+
+        .shows_item {
+
+            img {
+                border-radius: 20px;
+                object-fit: cover;
+
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        text-align: center;
+        .show {
+            display: block;
+            text-align: center;
+
+            .shows_item {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    @media (max-width: 460px) {
+        text-align: center;
+        .show {
+            display: block;
+            text-align: center;
+
+            .shows_item {
+                margin-bottom: 30px;
+            }
+        }
+}
+}

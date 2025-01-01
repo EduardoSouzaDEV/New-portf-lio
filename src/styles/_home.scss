@@ -1,0 +1,18 @@
+.home {
+    display: none;
+    margin-top: 258px;
+
+
+    .title--big {
+        margin: 20px 0 40px 0;
+    }
+
+    @media (max-width: 1024px) {
+        margin-top: 50px;
+    }
+
+    @media (max-width: 460px) {
+        margin-top: 50px;
+    }
+
+}
