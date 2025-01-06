@@ -74,6 +74,28 @@ body {
     font-weight: bold;
 }
 
+@media(max-width: 1024px) {
+    .text {
+        font-size: 16px;
+        font-family: "Merriweather", sans-serif;
+    }
+    
+    .title {
+        font-size: 20px;
+        font-family: "Merriweather", sans-serif;
+    }
+    
+    .title--small {
+        font-size: 14px;
+        font-family: "Merriweather", sans-serif;
+    }
+    
+    .title--big {
+        font-size: 28px;
+        font-family: "Merriweather", sans-serif;
+    }
+}
+
 
 /*animação*/
 

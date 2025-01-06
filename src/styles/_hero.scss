@@ -1,9 +1,9 @@
 @use "./config/variaveis";
 
 .hero {
-    
     height: 80vh;
-    width: 267px;
+    max-width: 290px;
+    width: 100%;
     padding: 25px;
     margin: 20px 40px;
     background-color: variaveis.$colorPrincipal;
@@ -20,7 +20,7 @@
             margin-right: 10px;
         }
     }
-    
+
     .avatar-profile {
         width: 100%;
         height: 227px;
@@ -49,16 +49,31 @@
         list-style: none;
     }
 
-    @media (max-width: 460px) {
+    @media (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 73vh;
+        padding: 20px;
+        margin: 40px 30px;
+        width: 80%;
+        background-color: #23272B;
+        border-radius: 20px;
+    }
+
+    @media (max-width: 425px) {
+        .hero {
+            max-width: none;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 76vh;
-            padding: 23px;
-            margin: 40px 40px;
-            width: 80%;
+            height: 73vh;
+            padding: 20px;
+            margin: 30px 300px;
+            width: 90%;
             background-color: #23272B;
             border-radius: 20px;
+        }
     }
-
 }
+
