@@ -1,0 +1,30 @@
+.assessment {
+    display: none;
+
+    h1 {
+        margin-bottom: 60px;
+        font-size: 32px;
+    }
+
+    .lista {
+        .item {
+            margin-bottom: 30px;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                transition: transform 0.3s ease;
+                border-radius: 20px;
+                padding: 40px;
+                cursor: zoom-in;
+            }
+
+            img:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

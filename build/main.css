@@ -60,6 +60,10 @@
   border-radius: 20px;
   border: 1px solid magenta;
 }
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
 .hero .text-h1 {
   display: flex;
   align-items: center;
@@ -175,6 +179,7 @@
 }
 .about .lista .item {
   margin-bottom: 10px;
+  font-size: 22px;
 }
 
 .shows {
@@ -250,6 +255,31 @@
     margin-bottom: 30px;
     width: 100%;
   }
+}
+
+.assessment {
+  display: none;
+}
+.assessment h1 {
+  margin-bottom: 60px;
+  font-size: 32px;
+}
+.assessment .lista .item {
+  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.assessment .lista .item img {
+  object-fit: cover;
+  width: 100%;
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+  padding: 40px;
+  cursor: zoom-in;
+}
+.assessment .lista .item img:hover {
+  transform: scale(1.2);
 }
 
 body {
