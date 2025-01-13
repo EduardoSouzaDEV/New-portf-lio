@@ -6,8 +6,9 @@
     width: 100%;
     padding: 25px;
     margin: 20px 40px;
-    background-color: variaveis.$colorPrincipal;
+    background-color: variaveis.$colorCinzaCarbonico;
     border-radius: 20px;
+    border: 1px solid variaveis.$colormagenta;
 
     .text-h1 {
         display: flex;
@@ -27,6 +28,7 @@
         border-radius: 20px;
         margin: 10px 0;
         padding: 10px;
+        border: 1px solid variaveis.$colormagenta;
     }
 
     .small {

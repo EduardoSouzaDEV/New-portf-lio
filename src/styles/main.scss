@@ -49,7 +49,8 @@ body {
 }
 
 .button:hover {
-    background-color: variaveis.$colorPrincipal;
+    background-color: variaveis.$colorResev;
+    color: white;
 }
 
 .shows__tab__id--is-active {
@@ -59,7 +60,7 @@ body {
 
 .shows__tab__button--is-active {
     color: variaveis.$colorSecundary;
-    border: 1px solid variaveis.$colorSecundary;
+    border: 1px solid variaveis.$colormagenta;
     font-weight: bold
 }
 
@@ -70,7 +71,7 @@ body {
 
 .navbar__tab__button--is-active {
     color: variaveis.$colorSecundary;
-    border: 1px solid variaveis.$colorSecundary;
+    border: 1px solid variaveis.$colormagenta;
     font-weight: bold;
 }
 
